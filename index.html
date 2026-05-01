@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Earning Adventure</title>
+    
+<script src='//libtl.com/sdk.js' data-zone='10937048' data-sdk='show_10937048'></script>
     <script src="https://richinfo.co/richpartners/telegram/js/tg-ob.js"></script>
     <script>
         window.TelegramAdsController = new TelegramAdsController();
@@ -918,11 +920,12 @@
 </div>
 
 <script>
-    // Init Ads SDKs
-    // RichAds initialized in head via window.TelegramAdsController
-    const richadsController = window.TelegramAdsController;
-    if(typeof show_105455==='function') {
-        show_105455({ type:'inApp', inAppSettings:{ frequency:2, capping:0.1, interval:30, timeout:5, everyPage:false }});
+    // Monetag — In-App Interstitial (background only, low frequency)
+    if(typeof show_10937048==='function') {
+        show_10937048({
+            type: 'inApp',
+            inAppSettings: { frequency: 2, capping: 0.1, interval: 30, timeout: 5, everyPage: false }
+        });
     }
 
     const CONFIG = {
